@@ -1,13 +1,16 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import DogsList from "./components/DogsList";
 
 function App() {
   return (
     <div className="App">
+      <main>
+        <DogsList />
+      </main>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Dogslist</p>
         <a
           className="App-link"
           href="https://reactjs.org"
