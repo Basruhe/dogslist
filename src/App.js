@@ -6,22 +6,17 @@ import DogsList from "./components/DogsList";
 function App() {
   return (
     <div className="App">
-      <main>
+      {/* <main>
         <DogsList />
-      </main>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </main> */}
     </div>
   );
+}
+
+render () {
+  <main>
+    <DogsList />
+  </main>
 }
 
 export default App;
