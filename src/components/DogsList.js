@@ -4,7 +4,7 @@ export default class DogsList extends Component {
   render() {
     return (
       <div className="dogs-list">
-        <h1>Dogs List</h1>
+        <h1>Dags List</h1>
       </div>
     );
   }
