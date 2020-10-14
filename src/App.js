@@ -1,22 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import DogsList from "./components/DogsList";
 
-function App() {
-  return (
-    <div className="App">
-      {/* <main>
+class App extends React.Component {
+  render() {
+    return (
+      <div>
         <DogsList />
-      </main> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
-
-render () {
-  <main>
-    <DogsList />
-  </main>
-}
-
 export default App;
