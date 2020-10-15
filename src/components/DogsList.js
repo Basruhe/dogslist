@@ -28,16 +28,15 @@ export default class DogsList extends Component {
     return (
       <div className="dogs-list">
         <h1>Dags List</h1>
-        {/* {this.state.dogBreeds === null && "Loading..."}
-        {!this.state.dogBreeds && "loading2"} */}
-        {!this.state.dogBreeds && "Loading..."}
 
-        {/* {this.state.dogBreeds && <ul>{dogBreeds.map(this.renderDogBreed)}</ul>} */}
-        {/* <ul>
-          {this.state.dogBreeds.map((breed) => (
-            <li key={breed}>{breed}</li>
-          ))}
-        </ul> */}
+        {!this.state.dogBreeds && "Loading..."}
+        {this.state.dogBreeds && (
+          <ul>
+            {this.state.dogBreeds.map((breed) => (
+              <li key={breed}>{breed}</li>
+            ))}
+          </ul>
+        )}
       </div>
     );
   }
