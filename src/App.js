@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import DogsListContainer from "./components/DogsListContainer";
+import DogBreedImagesContainer from "./components/DogBreedImagesContainer";
 import { Route } from "react-router-dom";
-import DogsList from "./components/DogsList";
-import DogBreedImages from "./components/DogBreedImages";
+// import DogsList from "./components/DogsList";
 
 class App extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class App extends React.Component {
           path="/dog-breeds/{name-of-dog-breed}"
           component="{DogBreedImages}"
         /> */}
-        <Route path="/dog-breeds/:breed" component={DogBreedImages} />
+        <Route path="/dog-breeds/:breed" component={DogBreedImagesContainer} />
       </div>
     );
   }
